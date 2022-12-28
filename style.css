@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(150, 198, 214);
+}
+
+.container{
+    margin:4rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 85vw;
+}
+.blurbg{
+    filter: blur(12px);
+    pointer-events: none;
+}
+
+.addNote{
+    width: 15rem;
+    height: 15rem;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+   
+}
+.addNote:hover{
+    box-shadow: 0px 0px 9px grey;
+    background-color: rgb(250, 249, 249);
+}
+.addBtn{
+   color: rgb(50, 162, 199);
+  text-align: center;
+
+}
+.note{
+    width: 15rem;
+    height: 15rem;
+    background-color: white;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+   
+}
+.head{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    color: rgb(41, 162, 202);
+}
+.content{
+    margin: 1rem;
+    height: 100%;
+    
+}
+.text{
+    padding-top: 0.4rem;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    height: 65%;
+    color: rgb(73, 70, 70);
+    letter-spacing: 0.6px;
+    font-weight: 500;
+    
+}
+
+.button{
+    display: flex;
+    justify-content: space-between;
+    font-family:sans-serif ;
+    color: grey;
+    margin-top: 9px;
+    font-size:x-small;
+    color: rgb(41, 162, 202);
+}
+
+.edit .edit-btn,.delete-btn{
+    
+    margin: 4px;
+    cursor: pointer;
+}
+.edit-btn{
+    color: green;
+}
+.edit-btn:hover{
+    text-shadow: 0px 0px 5px rgb(70, 132, 70);
+}
+.delete-btn{
+    color: red;
+}
+.delete-btn:hover{
+    text-shadow: 0px 0px 5px rgb(147, 82, 82);
+}
+
+.change-btn{
+    cursor: pointer;
+
+}
+.change-btn:hover{
+    text-shadow: 0px 0px 5px rgb(90, 79, 213);
+}
+.popUp{
+    width: 25rem;
+    height: 30rem;
+    background-color: white;
+    border-radius: 0.4rem;
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    
+}
+.mainHead{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.exit{
+    color: red;
+    cursor:pointer;
+    padding-right: 0.5rem;
+}
+
+.popUp #titDesc{
+    font-size: larger;
+    margin-top: 9px;
+    margin-bottom: 7px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 7rem;
+}
+.popUp p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+#titleText,#descText{
+    padding: 5px;
+    margin-left: 9px;
+}
+#title,#description{
+    width: 90%;
+    margin: 0 auto;
+
+}
+#title{
+    height: 1.5rem;
+    padding-left: 3px;
+    box-shadow: 0px 0px 3px grey;
+    border: 0.1px solid black;
+}
+#description{
+    height: 17rem;
+    padding-left: 3px;
+    box-shadow: 0px 0px 3px grey;
+    resize: none;
+   
+}
+.popUp button{
+   width: 90%;
+    height: 2rem;
+    background-color: rgb(57, 100, 200);
+    color: white;
+    border: none;
+    text-align: center;
+    border-radius: 8px;
+    font-size: large;
+    margin-top: 2rem;
+    margin-left: 9px;
+
+    
+
+}
+.popUp button:hover{
+    background-color: rgb(67, 93, 153) ;
+    cursor: pointer;
+}
+
+

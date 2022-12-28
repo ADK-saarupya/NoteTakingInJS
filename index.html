@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note-taking App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="container">
+
+        <div class="addNote note">
+            <div class="addBtn">
+                <i class="fa-solid fa-3x fa-circle-plus "></i>
+                <p>Add a new note....</p>
+            </div>
+        </div>
+        <div class="note">
+            <div class="content">
+                <div class="head">
+                    <p>Sample Note</p>
+                </div>
+                <div class="text">
+                    <p>This is my first description. Developed in HTML, CSS and JavaScript. Lorem ipsum dolor sit amet, cr adipisicing elit. Voluptatum iusint quae!</p>
+                </div>
+                <hr>
+                <div class="button">
+                    <div class="date">April 3,2022</div>
+                    <div class="edit">
+
+                        <i class="fa-solid fa-pen-to-square edit-btn"></i>
+                        <i class="fa-solid fa-trash delete-btn"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+ </section>
+    <div class="popUp">
+        <div class="mainHead">
+            <p id="titDesc">Add a new note</p>
+            <i class="fa-solid fa-xmark exit"></i>
+        </div>
+        <hr>
+        <div id="titleText">
+            <p>Title:</p>
+
+            <input type="text" id="title">
+        </div>
+        <div id="descText">
+            <p>Description:</p>
+            <textarea id="description"></textarea>
+        </div>
+        <button id="addNewNote">Add note</button>
+
+    </div>
+
+
+
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/cdc83a5bc5.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
